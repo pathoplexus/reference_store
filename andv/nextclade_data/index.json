@@ -21,9 +21,9 @@
       },
       "datasets": [
         {
-          "path": "hanta-andes/L",
+          "path": "andv/L",
           "shortcuts": [
-            "hanta-andes/L"
+            "andv/L"
           ],
           "enabled": true,
           "attributes": {
@@ -65,9 +65,9 @@
           }
         },
         {
-          "path": "hanta-andes/M",
+          "path": "andv/M",
           "shortcuts": [
-            "hanta-andes/M"
+            "andv/M"
           ],
           "enabled": true,
           "attributes": {
@@ -109,9 +109,9 @@
           }
         },
         {
-          "path": "hanta-andes/S",
+          "path": "andv/S",
           "shortcuts": [
-            "hanta-andes/S"
+            "andv/S"
           ],
           "enabled": true,
           "attributes": {
