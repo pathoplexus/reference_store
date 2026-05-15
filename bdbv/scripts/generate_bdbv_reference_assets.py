@@ -18,7 +18,8 @@ from pathlib import Path
 
 DATASET_BASE_URL = (
     "https://raw.githubusercontent.com/nextstrain/nextclade_data/"
-    "master/data_output/nextstrain/orthoebolavirus/bdbv/unreleased"
+    "2026-05-15--16-16-45Z/data_output/nextstrain/orthoebolavirus/"
+    "bdbv/2026-05-15--16-16-45Z"
 )
 GENES = ("NP", "VP35", "VP40", "GP", "GP_003", "VP30", "VP24", "L")
 
@@ -157,8 +158,7 @@ def translate_cds(reference: str, features: list[CdsFeature]) -> str:
     if len(cds) % 3:
         raise SystemExit(f"CDS length is not divisible by 3 for {features[0].name}")
 
-    protein = "".join(CODON_TABLE[cds[index : index + 3]] for index in range(0, len(cds), 3))
-    return protein[:-1] if protein.endswith("*") else protein
+    return "".join(CODON_TABLE[cds[index : index + 3]] for index in range(0, len(cds), 3))
 
 
 def reverse_complement(sequence: str) -> str:
